@@ -1,0 +1,49 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    height: 100vh;
+}
+
+.layout div {
+    background-color: #aeaeae;
+}
+
+.mainContent {
+    height: 400px;
+}
+
+@media (min-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-template-areas: 
+            "header header header"
+            "globalMenu globalMenu ads"
+            "contextMenu mainContent ads"
+            "contextMenu mainContent ads"
+            "footer footer footer";
+    }
+
+    .header {
+        grid-area: header;
+    }
+    .globalMenu {
+        grid-area: globalMenu;
+    }
+    .contextMenu {
+        grid-area: contextMenu;
+        width: 100%;
+    }
+    .mainContent {
+        grid-area: mainContent;
+        height: auto;
+    }
+    .ads {
+        grid-area: ads;
+        min-width: 200px;
+    }
+    .footer {
+        grid-area: footer;
+    }
+}

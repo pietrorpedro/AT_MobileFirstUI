@@ -1,0 +1,97 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 10px;
+}
+
+.header, .globalMenu, .contextMenu, .mainContent, .ads, .footer {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #aeaeae;
+}
+
+.headerContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.globalMenu {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.globalMenu img{
+    max-width: 40px;
+    cursor: pointer;
+}
+
+.header {
+    flex: 1;
+}
+
+.contextMenu {
+    order: 3;
+}
+
+.mainContent {
+    order: 4;
+    flex-grow: 1;
+}
+
+.ads {
+    order: 5;
+}
+
+.footer {
+    order: 6;
+}
+
+@media (min-width: 768px) {
+    .layout {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: 
+            "header header header"
+            "globalMenu globalMenu ads"
+            "contextMenu mainContent ads"
+            "contextMenu mainContent ads"
+            "contextMenu mainContent ads"
+            "footer footer footer";
+    }
+
+    .headerContainer {
+        display: contents;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .globalMenu {
+        grid-area: globalMenu;
+    }
+
+    .contextMenu {
+        grid-area: contextMenu;
+    }
+
+    .mainContent {
+        grid-area: mainContent;
+    }
+
+    .ads {
+        grid-area: ads;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .globalMenu img {
+        display: none;
+    }
+}

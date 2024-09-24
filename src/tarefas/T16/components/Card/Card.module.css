@@ -1,0 +1,19 @@
+.card {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 250px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    max-width: 100px;
+
+    margin: 0 auto;
+}
+
+.cardContent {
+    text-align: center;
+}
