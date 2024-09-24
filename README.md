@@ -1,8 +1,26 @@
-# React + Vite
+# AT de Mobile-first UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação React focada em design responsivo para dispositivos móveis.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Antes de iniciar, certifique-se de ter o Node.js instalado em seu sistema.
+
+## Instalação
+
+Para instalar todas as dependências necessárias, siga estes passos:
+
+1. Clone este repositório em sua máquina local:
+2. Instale as dependências:
+3. Instale as dependências de desenvolvimento com o comando: "npm install --save-dev":
+
+## Dependências
+
+Este projeto utiliza as seguintes bibliotecas:
+
+- `@emotion/react`: ^11.13.3
+- `@emotion/styled`: ^11.13.0
+- `@mui/icons-material`: ^6.1.1
+- `@mui/material`: ^6.1.1
+- `react-router-dom`: ^6.26.2
+- `styled-components`: ^6.1.13
